@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" style="--tg-viewport-height: 100vh; --tg-viewport-stable-height: 100vh;"><head>
+    <meta charset="UTF-8">
+    <title>JitStreamer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="MobileOptimized" content="176">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="apple-itunes-app" content="app-id=6471879502">
+    <meta name="telegram:channel" content="@swiftgram">
+  <!THIS SWIFT EXAMPLE ALL MADE BY KRYYAA>
+    <style>
+        html {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        body {
+            font-family: var(--default-font);
+            --default-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            font-weight: 400;
+            background: linear-gradient(-45deg, black, #4a0000, black );
+            margin: 0;
+          background-size: 400% 400%;
+            padding: 20px;
+
+
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: default;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .settings-container {
+            background: linear-gradient(-45deg, black, #4a0000, black );
+            /* background-color: #fff; */
+            border-radius: 10px;
+            
+            /* margin-bottom: 20px; */
+            overflow: hidden;
+            
+        }
+
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 15px;
+            border-bottom: 1px solid #79797c;
+            min-height: 31px;
+            margin-left: 2%; 
+            margin-right: 2%
+        }
+
+        .setting-item:last-of-type {
+            border-bottom: none;
+            
+        }
+
+        .setting-title {
+            font-size: 17px;
+            color: white;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 51px;
+            height: 31px;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ddd;
+            transition: .4s;
+            border-radius: 31px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 27px;
+            width: 27px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+
+        input:checked+.slider {
+            background-color: #4cd964;
+        }
+
+        input:focus+.slider {
+            outline: none;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(20px);
+        }
+
+        .section-header {
+            padding: 20px 15px 5px 15px;
+            font-size: 13px;
+            
+            color: #8e8e93;
+        }
+
+        .setting-note {
+            padding: 5px 15px 20px 15px;
+            font-size: 13px;
+            color: #8e8e93;
+            
+        }
+      .setting-header {
+        padding: 10px 15px 5px 5px;
+            font-size: 28px;
+        font-weight: bold;
+            color: white;
+        font-family: Chalkduster;
+          text-align: center;
+      }
+      .mini {
+        padding: 10px 15px 5px 5px; 
+        font-size: 16px;
+        font-weight: bold;
+            color: white;
+        font-family: monospace;
+          text-align: center;
+      }
+      .ulrtamini {
+        padding: 10px 15px 5px 5px; 
+        font-size: 12px;
+        font-weight: bold;
+            color: white;
+        font-family: monospace;
+          text-align: center;
+      }
+      .setting-inv {
+        position: relative;
+        color: #8e8e93;
+        
+            font-size: 17px;
+            
+        }
+      .console {
+        align-self: center;
+      position: relative;
+      width: 350px;
+      background-color: #111;
+      border-radius: 10px;
+      padding: 10px;
+  font-family: monospace;
+    }
+      .cst {
+        font-family: monospace; 
+        font-size: 9px;
+        color: white
+      }
+    </style>
+    
+</head>
+
+<body>
+    <div class="setting-header">
+      DRKRN
+  </div>
+  <div class="mini">
+    D4rkRa1n jailbreak
+  </div>
+  <div class="ulrtamini">
+    for iOS 17.0 - 17.2
+  </div>
+    <div class="section-header">D4RKRA1N</div>
+    <div class="settings-container">
+        
+      <div class="setting-item">
+        <div class="setting-title">
+          Youre version is
+        </div>
+        <div class="setting-inv" id="iosss">
+          
+        </div>
+      </div>
+      <div class="setting-item" onclick="save()">
+        <div class="setting-title">
+          JailBreak
+        </div>
+        <div class="setting-inv">
+          ⛁
+        </div>
+      </div>
+    </div>
+  <div class="setting-header">
+    
+  </div>
+  <div class="console">
+    <div class="cst">
+      [*] D4rkRa1n version: 1.0
+    </div>
+    <div class="cst">
+      [*] D4rkRa1n used PoC (Vortexia source for 17.2)
+    </div>
+    <div class="cst">
+      [*] kernel version: Darwin Kernel Version 20.0.0: Wed Sep 30 03:24:41 PDT 2020; root:xnu-7195.0.46~41/RELEASE_ARM64_T8015
+    </div>
+    <div class="cst" id="cons">
+      [*] kernel page size: 0x4000
+    </div>
+  </div>
+
+    
+    
+    <script>
+      function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+      
+      var checkbox = document.getElementById("snt");
+      
+      function ios() {
+                const userAgent = window.navigator.userAgent;
+                const match = userAgent.match(/(iPad|iPhone|iPod)\s+OS\s+(\d+_+\d+)/);
+
+                if (match) {
+                    const version = match[2].replace(/_/g, '.');
+                    return version;
+                }
+
+                // Return null if the user agent doesn't match the pattern for iOS
+                return null;
+         
+      }
+      
+      document.getElementById("iosss").innerText = document.getElementById("iosss").innerText + ios();
+      
+      async function save() {
+        if (ios() < 17) {
+          alert("iOS is not supported")
+        } else {
+          if (ios() > 17.2) {
+            alert("iOS is not supported")
+          } else {
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] jailbreak process: 1/10';
+            await sleep(1000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] verifying Pkg...';
+            await sleep(3450); 
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] Done';
+            await sleep(500); 
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] jailbreak process: 2/10';
+            await sleep(1000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] kern way: 0x17635000';
+            await sleep(1000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] exploiting PoC';
+            await sleep(10000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] jailbreak process: 3/10';
+            await sleep(100);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] (wait please) jailbreak process: 4/10';
+            await sleep(1000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] jailbreak process: 5/10';
+            await sleep(1000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] jailbreak process: 6/10';
+            await sleep(1000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] jailbreak process: 7/10';
+            await sleep(1000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] jailbreak process: 8/10';
+            await sleep(1000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] jailbreak process: 9/10';
+            await sleep(1000);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] jailbreak process: 10/10';
+            await sleep(3400);
+            document.getElementById("cons").innerText = document.getElementById("cons").innerText + '\n[+] Jailbreak success! Now ReSpring with FixAll Reborn \ ReSpring button';
+          }
+        }
+      }
+  </script>
+
+</body></html>
